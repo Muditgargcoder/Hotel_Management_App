@@ -289,7 +289,7 @@ public class Delete extends javax.swing.JFrame {
         }
         try {
             Class.forName("java.sql.Driver");
-            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mudit", "root", "madhu304");
+            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "root", "mysql password");
             Statement stmt = (Statement) con.createStatement();
             String query = "select Booking_no,name from hotel where not name='<name>' order by roomno;";
 
@@ -311,7 +311,7 @@ public class Delete extends javax.swing.JFrame {
 
         try {
             Class.forName("java.sql.Driver");
-            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mudit", "root", "madhu304");
+            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "root", "mysql password");
 
             Statement stmt = (Statement) con.createStatement();
             String bkn = jTextField2.getText();
@@ -360,7 +360,7 @@ public class Delete extends javax.swing.JFrame {
 
         try {
             Class.forName("java.sql.Driver");
-            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mudit", "root", "madhu304");
+            java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "root", "mysql password");
 
             int a = Integer.parseInt(jTextField2.getText());//booking no
             int d = Integer.parseInt(jTextField4.getText());//room no
