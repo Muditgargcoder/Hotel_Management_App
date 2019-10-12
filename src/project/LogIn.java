@@ -144,7 +144,7 @@ public class LogIn extends javax.swing.JFrame {
 
             try {
                 Class.forName("java.sql.Driver");
-                java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mudit", "root", "madhu304");
+                java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/your_database_name", "root", "mysql password");
 
                 Statement stmt = (Statement) con.createStatement();
 
